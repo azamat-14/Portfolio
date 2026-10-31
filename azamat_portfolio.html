@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azamat Abaev | Portfolio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;scroll-behavior:smooth}
+body{background:#080b14;color:white}
+header{display:flex;justify-content:space-between;align-items:center;padding:25px 10%;background:#0c1120;position:sticky;top:0;z-index:100}
+.logo{color:#38bdf8;font-size:25px;font-weight:bold}
+nav a{color:white;text-decoration:none;margin-left:25px;transition:.3s}
+nav a:hover{color:#38bdf8}
+.hero{min-height:85vh;display:flex;justify-content:center;align-items:center;text-align:center;padding:30px}
+.hero h1{font-size:55px;margin-bottom:20px}
+.hero h1 span{color:#38bdf8}
+.hero p{color:#a5b4c8;font-size:19px;margin-bottom:30px}
+.btn{display:inline-block;background:#38bdf8;color:#080b14;padding:14px 28px;border-radius:8px;text-decoration:none;font-weight:bold;transition:.3s}
+.btn:hover{background:white;transform:translateY(-4px)}
+section{padding:80px 10%}
+.title{text-align:center;font-size:35px;margin-bottom:40px}
+.title span{color:#38bdf8}
+.about{text-align:center;color:#a5b4c8;line-height:1.8;max-width:700px;margin:auto}
+.skills{display:flex;justify-content:center;flex-wrap:wrap;gap:20px}
+.skill{background:#111a2d;border:1px solid #263b59;padding:25px 40px;border-radius:12px;font-size:20px;transition:.3s}
+.skill:hover{border-color:#38bdf8;transform:translateY(-7px)}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:25px}
+.project{background:#111a2d;padding:30px;border-radius:15px;border:1px solid #263b59;transition:.3s}
+.project:hover{transform:translateY(-8px);border-color:#38bdf8}
+.project h3{color:#38bdf8;margin-bottom:15px}
+.project p{color:#a5b4c8;line-height:1.6}
+.contact{text-align:center}
+.contact p{color:#a5b4c8;margin-bottom:25px}
+footer{background:#0c1120;text-align:center;padding:25px;color:#94a3b8}
+@media(max-width:650px){
+ header{flex-direction:column;gap:20px}
+ nav{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+ nav a{margin:0;font-size:13px}
+ .hero h1{font-size:38px}
+ section{padding:60px 7%}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">AZAMAT.</div>
+  <nav>
+    <a href="#home">Главная</a><a href="#about">Обо мне</a>
+    <a href="#skills">Навыки</a><a href="#projects">Проекты</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+</header>
+<section class="hero" id="home">
+  <div>
+    <h1>Привет, я <span>Azamat Abaev</span></h1>
+    <p>Начинающий Frontend Developer</p>
+    <a href="#projects" class="btn">Мои проекты</a>
+  </div>
+</section>
+<section id="about">
+  <h2 class="title">Обо <span>мне</span></h2>
+  <p class="about">Привет! Меня зовут Азамат. Я начинающий веб-разработчик.
+  Мне нравится создавать современные и красивые сайты. Сейчас я изучаю
+  HTML и CSS, развиваю свои навыки и работаю над собственными проектами.
+  Моя цель — стать профессиональным программистом.</p>
+</section>
+<section id="skills">
+  <h2 class="title">Мои <span>навыки</span></h2>
+  <div class="skills">
+    <div class="skill">HTML5</div><div class="skill">CSS3</div>
+    <div class="skill">Responsive Design</div><div class="skill">VS Code</div>
+  </div>
+</section>
+<section id="projects">
+  <h2 class="title">Мои <span>проекты</span></h2>
+  <div class="projects">
+    <div class="project"><h3>Portfolio Website</h3><p>Мой личный сайт-портфолио с современным дизайном.</p></div>
+    <div class="project"><h3>Kvartira.uz</h3><p>Проект сайта для поиска и продажи недвижимости.</p></div>
+    <div class="project"><h3>Online Store</h3><p>Мой проект интернет-магазина с карточками товаров.</p></div>
+  </div>
+</section>
+<section id="contact">
+  <h2 class="title">Связаться <span>со мной</span></h2>
+  <div class="contact">
+    <p>Спасибо за посещение моего портфолио!</p>
+    <a href="mailto:your@email.com" class="btn">Написать мне</a>
+  </div>
+</section>
+<footer>© 2026 Azamat Abaev. All Rights Reserved.</footer>
+</body>
+</html>
